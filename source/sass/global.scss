@@ -2,17 +2,19 @@ body {
   min-width: 1200px;
   margin: 0;
 
-  background-color: #fff;
-  background-image: url('../img/body_bcgd.jpg');
+  background-color: #f3f3f3;
+  background-image: url('../img/background.jpg');
   background-repeat: no-repeat;
   background-position: top center;
+  background-size: 1673px 647px;
 
-  font-family: "Core Sans E 45", "Arial", serif;
+  font-family: "Raleway", "Open Sans", sans-serif; // Verdana, Arial, Helvetica, sans-serif;
+  // font-family: "Roboto Slab", "Arial", serif; // Times, Times New Roman, Georgia, serif
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
-  color: $basic-font-clr;
+  color: $font-color-basic;
 }
 
 img {

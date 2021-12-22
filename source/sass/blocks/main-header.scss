@@ -1,0 +1,84 @@
+$nm: main-header;
+
+.#{$nm} {
+
+}
+
+.container {
+	width: 1170px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+
+	outline: 0.143rem solid orange;
+	outline-offset: -0.143rem;
+}
+
+// .#{$nm} ul {
+// 	padding: 0;
+// 	list-style: none;
+// }
+
+.#{$nm}__nav {
+	display: flex;
+	flex-direction: row;
+}
+
+.#{$nm}__nav *{
+	outline: 0.107rem dotted #00008b;
+	outline-offset: -0.107rem;
+}
+
+.#{$nm}__site-nav {
+	display: flex;
+	margin: 0px 0px 0px 0px;
+	padding: 0;
+	list-style: none;
+}
+
+.#{$nm}__site-nav-item {
+
+}
+
+.#{$nm}__site-nav-link {
+
+}
+
+.#{$nm}__user-nav {
+	margin: 0px 0px 0px auto;
+	padding: 0;
+	list-style: none;
+}
+
+.#{$nm}__fieldset-list {
+	display: flex;
+	padding: 0;
+	list-style: none;
+}
+
+.#{$nm}__fieldset-item {
+
+}
+
+
+.#{$nm}__contacts {
+	margin-left: auto;
+	margin-right: 10px;
+}
+
+.#{$nm}__phone {
+
+}
+
+.#{$nm}__phone-comment {
+
+}
+
+
+
+
+.#{$nm}__ {}
+.#{$nm}__ {}
+.#{$nm}__ {}
+.#{$nm}__ {}
+.#{$nm}__ {}

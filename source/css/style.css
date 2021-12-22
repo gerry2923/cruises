@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "Raleway";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../font/Raleway-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../font/Raleway-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto Slab";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../font/RobotoSlab-Regular.ttf") format("truetype");
+}
+body {
+  min-width: 1200px;
+  margin: 0;
+  background-color: #f3f3f3;
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 1673px 647px;
+  font-family: "Raleway", "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #0d3351;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  word-wrap: normal;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 0.143rem solid orange;
+  outline-offset: -0.143rem;
+}
+
+.main-header__nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-header__nav * {
+  outline: 0.107rem dotted #00008b;
+  outline-offset: -0.107rem;
+}
+
+.main-header__site-nav {
+  display: flex;
+  margin: 0px 0px 0px 0px;
+  padding: 0;
+  list-style: none;
+}
+
+.main-header__user-nav {
+  margin: 0px 0px 0px auto;
+  padding: 0;
+  list-style: none;
+}
+
+.main-header__fieldset-list {
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+
+.main-header__contacts {
+  margin-left: auto;
+  margin-right: 10px;
+}
+/*# sourceMappingURL=style.css.map */
