@@ -45,3 +45,23 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.button {
+  font-family: "Raleway", "Open Sans", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 3.43em;
+  color: $font-clr-light;
+
+  background-color: $button-bgd;
+  text-align: center;
+  vertical-align: middle;
+
+  display: block;
+  width: 202px;
+  height: 47px;;
+}
+
+.section__header {}
+.section__title {}

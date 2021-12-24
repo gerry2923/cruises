@@ -1,0 +1,64 @@
+$nm: promo;
+
+.#{$nm} {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 300px;;
+}
+
+.promo div:first-child{
+	position: relative;
+}
+
+.promo__wrapper {
+	width: 100%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.promo__wrapper::before {
+	content: "";
+	display: block;
+	width: 61px;
+	height: 284px;
+	position: absolute;
+	top: 287px;
+	left: 531px;
+
+	background-image: url('../img/dashed-line.svg');
+	background-repeat: no-repeat;
+	background-size: 61px 284px;
+	background-position: top center;
+}
+
+.#{$nm}__title {
+	font-family: "Roboto Slab", "Lucida Bright",serif,;
+	font-size: 2.25rem;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 1.12em;
+	letter-spacing: 0.05em;
+
+	margin: 0px auto 10px;
+}
+
+.#{$nm}__title_big {
+	font-size: 6.25rem;
+	margin-bottom: 0px;;
+	text-transform: uppercase;
+	line-height: 1.74em;
+	letter-spacing: -0.025em;
+
+	padding-top: 0px;
+	padding-right: 5px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+.#{$nm}__button {
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
