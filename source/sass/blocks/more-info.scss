@@ -1,0 +1,27 @@
+$nm: more-info;
+
+.#{$nm} {
+	display: flex;
+	flex-direction: column;
+}
+
+.#{$nm}__phone {
+	color: inherit;
+	font-weight: 900;
+	padding-top: 30px;
+	letter-spacing: 0.082em;
+	display: block;
+	line-height: 1em;
+	font-size: 0.875rem;
+	text-transform: uppercase;
+}
+
+.#{$nm}__text {
+	padding-top: 7px;
+	margin-top: 0px;
+	font-size: 10px;
+	display: block;
+	line-height: 1.2em;
+	letter-spacing: 0.05em;
+}
+

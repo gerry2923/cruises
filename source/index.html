@@ -10,6 +10,7 @@
 <body>
 	<header class="main-header">
 		<nav class="main-header__nav container">
+			
 			<ul class="main-header__site-nav site-nav">
 				<li class="site-nav__item">
 					<a href="#" class="site-nav__link">Расписание рейсов</a>
@@ -24,9 +25,11 @@
 				</li>
 			</ul>
 
-			<ul class="main-header__user-nav">
+			<div class="main-header__user-nav">
 				<form action="#" method="GET">
+
 					<ul class="main-header__fieldset-list">
+						
 						<li class="main-header__fieldset-item">
 							<legend class="visually-hidden">Личный кабинет</legend>
 							<select name="account" id="account">
@@ -48,19 +51,26 @@
 						<li class="main-header__fieldset-item">
 							<legend class="visually-hidden">Язык</legend>
 							<select name="page-language" id="page-language">
-								<option selected value="rus">Русский</option>
-								<option value="en">Английский</option>
+								<option selected value="rus">Ru</option>
+								<option value="en">En</option>
 							</select>
 						</li>
 					</ul>
 				</form>
-			</ul>
+			</div>
 
 			<div class="main-header__contacts more-info">
-				<a href="tel:88005006105" class="more-info__phone">8 800 500 61 05</a>
+				<a href="tel:88005006105" class="more-info__phone">8 800 500-61-05</a>
 				<small class="more-info__text">Круглосуточная поддержка</small>
 			</div>
 		</nav>
+
+		<div class="main-header__logo-container container">
+			<a href="#" class="logo">
+				<img src="../img/logo.png" width="88" height="88" alt="Логотип">
+			</a>
+		</div>
+		
 	</header>
 
 	<main>
@@ -70,7 +80,6 @@
 				<h2 class="promo__title">Морские прогулки <span class="promo__title_big">По черному морю</span></h2>
 				<a href="#" class="promo__button button">Выбрать круиз</a>
 			</div>
-			
 		</section>
 
 		<section class="catalog container">
