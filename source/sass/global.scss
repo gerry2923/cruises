@@ -63,5 +63,28 @@ a {
   height: 47px;;
 }
 
-.section__header {}
-.section__title {}
+.section__header {
+  width: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  outline: 1px solid blue;
+  outline-offset: -1px;
+}
+
+.section__title {
+  font-family: "Roboto Slab", serif;
+  font-size: 2.25rem;
+  line-height: 1.2em;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0.05em;
+
+  color: $font-color-basic;
+
+  margin: 0px 0px 0px 0px;
+}

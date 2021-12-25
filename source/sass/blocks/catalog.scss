@@ -2,10 +2,39 @@ $nm: catalog;
 
 .#{$nm} {}
 
-.#{$nm} label {
-
+.#{$nm} form {
+	padding-left: 61px;
+	padding-top: 4px;
 }
 
-.#{$nm}__list {}
+.#{$nm} select{
+	appearance: none;
+	background-color: transparent;
+	border: none;
+	font-style: italic;
+	font-size: 0.875rem;
+}
+
+.#{$nm} label {
+	font-size: 0.875rem;
+	letter-spacing: 0.05em;
+}
+
+.#{$nm}__list {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: 960px;
+	list-style: none;
+
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.#{$nm}__list *{
+	outline: 1px dotted #66cd00;
+	outline-offset: -1px;
+}
+
 .#{$nm}__item {}
 .#{$nm}__button {} 

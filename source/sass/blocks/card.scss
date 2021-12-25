@@ -1,10 +1,35 @@
-.card {}
+.card {
+	display: flex;
+	flex-direction: column;
+	width: 555px;
+}
+
+.card img {
+	order: -1;
+}
 
 .card__title {
+	margin: 0px 0px;
+	padding: 0px 0px;
 
 }
 
 .card__description {
+	margin: 0px 0px;
+}
+
+.card__description-item {
+	display: flex;
+	// flex-direction: row;
+}
+
+.card__description tt {
+
+}
+
+.card__description dd {
+	margin-left: 0px;
+
 }
 
 .card__price {

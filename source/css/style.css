@@ -76,11 +76,35 @@ a {
   height: 47px;
 }
 
+.section__header {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  outline: 1px solid blue;
+  outline-offset: -1px;
+}
+
+.section__title {
+  font-family: "Roboto Slab", serif;
+  font-size: 2.25rem;
+  line-height: 1.2em;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0.05em;
+  color: #0d3351;
+  margin: 0px 0px 0px 0px;
+}
+
 .container {
   width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  outline: 1px solid red;
+  outline-offset: -1px;
 }
 
 .main-header__nav {
@@ -221,7 +245,7 @@ a {
 .promo {
   padding-top: 0px;
   padding-bottom: 0px;
-  margin-bottom: 300px;
+  margin-bottom: 305px;
 }
 
 .promo div:first-child {
@@ -276,5 +300,65 @@ a {
 .promo__button {
   margin-bottom: 0px;
   margin-top: 0px;
+}
+
+.catalog form {
+  padding-left: 61px;
+  padding-top: 4px;
+}
+
+.catalog select {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  font-style: italic;
+  font-size: 0.875rem;
+}
+
+.catalog label {
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+}
+
+.catalog__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 960px;
+  list-style: none;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.catalog__list * {
+  outline: 1px dotted #66cd00;
+  outline-offset: -1px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 555px;
+}
+
+.card img {
+  order: -1;
+}
+
+.card__title {
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+
+.card__description {
+  margin: 0px 0px;
+}
+
+.card__description-item {
+  display: flex;
+}
+
+.card__description dd {
+  margin-left: 0px;
 }
 /*# sourceMappingURL=style.css.map */
