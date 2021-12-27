@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Raleway";
   font-weight: bold;
@@ -78,7 +79,7 @@ a {
 
 .section__header {
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 38px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -302,9 +303,14 @@ a {
   margin-top: 0px;
 }
 
+.catalog {
+  margin-bottom: 74px;
+}
+
 .catalog form {
-  padding-left: 61px;
+  padding-left: 0px;
   padding-top: 4px;
+  position: relative;
 }
 
 .catalog select {
@@ -313,32 +319,55 @@ a {
   border: none;
   font-style: italic;
   font-size: 0.875rem;
+  width: 120px;
+}
+
+.catalog__form-sort-wrapper::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 15px;
+  right: 0px;
+  border-top: 4px solid #0d3351;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+}
+
+.catalog select:focus-visible {
+  outline-color: #b2b8bf;
 }
 
 .catalog label {
   font-size: 0.875rem;
   letter-spacing: 0.05em;
+  position: relative;
 }
 
 .catalog__list {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 960px;
+  height: 978px;
   list-style: none;
-  margin: 0px 0px 0px 0px;
+  margin: 0px -29px 0px 0px;
   padding: 0px 0px 0px 0px;
 }
 
-.catalog__list * {
-  outline: 1px dotted #66cd00;
-  outline-offset: -1px;
+.catalog__button {
+  margin: 0px auto 0px;
+  border: none;
 }
 
 .card {
   display: flex;
   flex-direction: column;
   width: 555px;
+  margin-right: 29px;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .card img {
@@ -346,19 +375,185 @@ a {
 }
 
 .card__title {
-  margin: 0px 0px;
+  font-family: "Roboto Slab", "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.125rem;
+  line-height: 2.66em;
+  letter-spacing: 0.05em;
+  color: #33c7fd;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 13px 0px 0px 38px;
   padding: 0px 0px;
 }
 
+.card__title::after {
+  content: "";
+  display: block;
+  margin-top: 2px;
+  margin-left: 15px;
+  width: 8px;
+  height: 8px;
+  border-left: 4px solid #33c7fd;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-right: 4px solid transparent;
+}
+
 .card__description {
-  margin: 0px 0px;
+  margin: 0px 0px 3px;
+  padding-left: 36px;
+  line-height: 1.5em;
 }
 
 .card__description-item {
   display: flex;
 }
 
+.card__description-wrapper {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.card__description tt {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.71em;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  margin-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 .card__description dd {
+  font-family: "Raleway", "Arial", sans-serif;
   margin-left: 0px;
+  font-size: 0.875rem;
+  line-height: 1.71em;
+  letter-spacing: 0.05em;
+}
+
+.card__price {
+  font-family: "Roboto Slab", "Times New Roman", Times, serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.875rem;
+  line-height: 1.6em;
+  letter-spacing: 0.05em;
+  margin: 0px 0px 0px 0px;
+  padding-left: 38px;
+}
+
+.card__hit {
+  position: relative;
+}
+
+.card__hit::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -7px;
+  right: 47px;
+  width: 89px;
+  height: 101px;
+  border-top: 82px solid #33c7fd;
+  border-left: 44px solid #33c7fd;
+  border-right: 44px solid #33c7fd;
+  border-bottom: 19px solid transparent;
+}
+
+.card__hit::after {
+  content: "Хит продаж";
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 47px;
+  width: 89px;
+  height: 101px;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.29em;
+  font-size: 0.875rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card__discount {
+  position: relative;
+}
+
+.card__discount::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -7px;
+  right: 46px;
+  width: 89px;
+  height: 101px;
+  border-top: 82px solid #f20542;
+  border-left: 44px solid #f20542;
+  border-right: 44px solid #f20542;
+  border-bottom: 19px solid transparent;
+}
+
+.card__discount::after {
+  content: "акция";
+  display: block;
+  position: absolute;
+  top: 29px;
+  right: 45px;
+  width: 89px;
+  height: 101px;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.29em;
+  font-size: 0.875rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card__discount-text {
+  font-size: 1.125rem;
+  line-height: 2.67em;
+  color: #b2b8bf;
+  text-decoration: line-through;
+}
+
+.gallery * {
+  outline: 1px dotted #66cd00;
+  outline-offset: -1px;
+}
+
+.gallery__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 641px;
+  margin: 0;
+  padding: 0px 0px 0px 0px;
+  list-style: none;
+}
+
+.gallery__item {
+  width: 285px;
+  height: 320px;
+}
+
+.gallery__item img {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery__item_big {
+  width: 570px;
 }
 /*# sourceMappingURL=style.css.map */

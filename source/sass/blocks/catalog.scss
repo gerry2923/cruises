@@ -1,10 +1,13 @@
 $nm: catalog;
 
-.#{$nm} {}
+.#{$nm} {
+	margin-bottom: 74px;
+}
 
 .#{$nm} form {
-	padding-left: 61px;
+	padding-left: 0px;
 	padding-top: 4px;
+	position: relative;
 }
 
 .#{$nm} select{
@@ -13,28 +16,54 @@ $nm: catalog;
 	border: none;
 	font-style: italic;
 	font-size: 0.875rem;
+	width: 120px;
+}
+
+.#{$nm}__form-sort-wrapper {
+}
+
+.#{$nm}__form-sort-wrapper::after {
+	content: "";
+	display: block;
+	width: 8px;
+	height: 8px;
+	position: absolute;
+	top: 15px;
+	right: 0px;
+
+	border-top: 4px solid $font-color-basic;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+}
+
+.#{$nm} select:focus-visible {
+	outline-color: $strikethough-text;
 }
 
 .#{$nm} label {
 	font-size: 0.875rem;
 	letter-spacing: 0.05em;
+	position: relative;
 }
+
 
 .#{$nm}__list {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	height: 960px;
+	height: 978px;
 	list-style: none;
 
-	margin: 0px 0px 0px 0px;
+	margin: 0px -29px 0px 0px;
 	padding: 0px 0px 0px 0px;
 }
 
-.#{$nm}__list *{
-	outline: 1px dotted #66cd00;
-	outline-offset: -1px;
+.#{$nm}__item {
 }
 
-.#{$nm}__item {}
-.#{$nm}__button {} 
+.#{$nm}__button {
+	margin: 0px auto 0px;
+	border: none;
+} 
+

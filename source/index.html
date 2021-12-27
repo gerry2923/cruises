@@ -88,12 +88,14 @@
 				<h2 class="section__title">Каталог круизов</h2>
 				
 				<form action="#" method="GET">
+					<div class="catalog__form-sort-wrapper">
 					<label for="sort-by">Сортировать круизы по </label>
-					<select name="sort-by" id="sort-by">
-						<option value="price">цене</option>
-						<option value="popular">популярности</option>
-						<option value="rating">рейтингу</option>
-					</select>
+						<select name="sort-by" id="sort-by">
+							<option value="price">цене</option>
+							<option value="popular">популярности</option>
+							<option value="rating">рейтингу</option>
+						</select>
+					</div>
 				</form>
 			</header>
 			
@@ -105,20 +107,22 @@
 					</a>
 					<img src="../img/catalog-pic-1.jpg" width="555" height="437" alt="Круиз в Анапу">
 
-					<dl class="card__description">
-						<div class="card__description-item">
-							<tt>Маршрут:</tt>
-							<dd>Сочи-Лазаревское-Геленджик-Анапа</dd>
-						</div>
+					<div class="card__description-wrapper">
+						<dl class="card__description">
+							<div class="card__description-item">
+								<tt>Маршрут:</tt>
+								<dd>Сочи-Лазаревское-Геленджик-Анапа</dd>
+							</div>
 
-						<div class="card__description-item">
-							<tt>Продолжительлность:</tt>
-							<dd>10 ч 0 мин</dd>
-						</div>
-					</dl>
+							<div class="card__description-item">
+								<tt>Продолжительлность:</tt>
+								<dd>10 ч 0 мин</dd>
+							</div>
+						</dl>
 
-
-					<p class="card__price">49 000 руб. <span class="visually-hidden card__discount"></span></p>
+						<p class="card__price">49 000 руб.<span class="visually-hidden card__discount-text"></span>
+						</p>
+					</div>
 				</li>
 
 				<li class="catalog__item card">
@@ -127,15 +131,21 @@
 					</a>
 					<img src="../img/catalog-pic-2.jpg" width="555" height="113" alt="Круиз в Новороссийск">
 
-					<dl class="card__description">
-						<tt>Маршрут:</tt>
-						<dd>Сочи-Геленджик-Новороссийск-Геленджик-Сочи</dd>
+					<div class="card__description-wrapper">
+						<dl class="card__description">
+							<div class="card__description-item">
+								<tt>Маршрут:</tt>
+								<dd>Сочи-Геленджик-Новороссийск-Геленджик-Сочи</dd>
+							</div>
 
-						<tt>Продолжительлность:</tt>
-						<dd>13 ч 0 мин</dd>
-					</dl>
-					<p class="card__price">14 800 руб.</p>
-					<p class="visually-hidden card__discount"></p>
+							<div class="card__description-item">
+								<tt>Продолжительлность:</tt>
+								<dd>13 ч 0 мин</dd>
+							</div>
+						</dl>
+
+						<p class="card__price">14 800 руб.<span class="visually-hidden card__discount-text"></span></p>
+					</div>
 				</li>
 
 				<li class="catalog__item card card__discount">
@@ -144,15 +154,21 @@
 					</a>
 					<img src="../img/catalog-pic-3.jpg" width="555" height="113" alt="Прогулка с экскурсией Сочи-Адлер">
 
-					<dl class="card__description">
-						<tt>Маршрут:</tt>
-						<dd>Сочи-Адлер-Сочи (без высадки)</dd>
+					<div class="card__description-wrapper">
+						<dl class="card__description">
+							<div class="card__description-item">
+								<tt>Маршрут:</tt>
+								<dd>Сочи-Адлер-Сочи (без высадки)</dd>
+							</div>
 
-						<tt>Продолжительлность:</tt>
-						<dd>1 ч 0 мин</dd>
-					</dl>
-					<p class="card__price">5 000 руб.</p>
-					<p class="card__discount">15000 руб.</p>
+							<div class="card__description-item">
+								<tt>Продолжительлность:</tt>
+								<dd>1 ч 0 мин</dd>
+							</div>
+						</dl>
+
+						<p class="card__price">5 000 руб. <span class="card__discount-text">15000 руб.</span></p>
+					</div>
 				</li>
 
 				<li class="catalog__item card">
@@ -161,15 +177,21 @@
 					</a>
 					<img src="../img/catalog-pic-4.jpg" width="555" height="113" alt="Прогулка в Геленджик">
 
-					<dl class="card__description">
-						<tt>Маршрут:</tt>
-						<dd>Сочи-Туапсе-Геленджик</dd>
-
-						<tt>Продолжительлность:</tt>
-						<dd>12 ч 30 мин</dd>
-					</dl>
-					<p class="card__price">7 000 руб.</p>
-					<p class="visually-hidden card__discount"></p>
+					<div class="card__description-wrapper">
+						<dl class="card__description">
+							<div class="card__description-item">
+								<tt>Маршрут:</tt>
+								<dd>Сочи-Туапсе-Геленджик</dd>
+							</div>
+	
+							<div class="card__description-item">
+								<tt>Продолжительлность:</tt>
+								<dd>12 ч 30 мин</dd>
+							</div>
+						</dl>
+	
+						<p class="card__price">7 000 руб. <span class="visually-hidden card__discount-text"></span></p>
+					</div>
 				</li>
 
 				<li class="catalog__item card">
@@ -178,15 +200,21 @@
 					</a>
 					<img src="../img/catalog-pic-4.jpg" width="555" height="113" alt="Прогулка в Абрау-Дюрсо">
 
-					<dl class="card__description">
-						<tt>Маршрут:</tt>
-						<dd>Сочи-Абрау-Дюрсо</dd>
-
-						<tt>Продолжительлность:</tt>
-						<dd>11 ч 00 мин</dd>
-					</dl>
-					<p class="card__price">14 800 руб.</p>
-					<p class="visually-hidden card__discount"></p>
+					<div class="card__description-wrapper">
+						<dl class="card__description">
+							<div class="card__description-item">
+								<tt>Маршрут:</tt>
+								<dd>Сочи-Абрау-Дюрсо</dd>
+							</div>
+	
+							<div class="card__description-item">
+								<tt>Продолжительлность:</tt>
+								<dd>11 ч 00 мин</dd>
+							</div>
+						</dl>
+	
+						<p class="card__price">14 800 руб. <span class="visually-hidden card__discount-text"></span></p>
+					</div>
 				</li>
 			</ul>
 
