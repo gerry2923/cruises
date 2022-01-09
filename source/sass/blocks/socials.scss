@@ -1,0 +1,64 @@
+$nm: socials;
+
+.#{$nm} {
+
+}
+
+.#{$nm}__text {
+	font-family: "Raleway", "Arial", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 1.71em;
+	font-size: 0.875rem;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.socials__list {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	list-style: none;
+	display: flex;
+
+}
+
+.#{$nm}__item {
+	position: relative;
+
+}
+
+.#{$nm}__link {
+	display: block;
+	width: 0px;
+	text-indent: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+
+}
+
+.#{$nm}__item::before {
+	content: "";
+	display: block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+
+	border-radius: 50%;
+	background-color: $font-color-basic;
+
+}
+
+
+.vk {}
+.ok {}
+.yt {}
+.insta {}
+
+
+
+
+.#{$nm}__ {}

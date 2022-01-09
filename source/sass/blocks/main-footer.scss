@@ -1,0 +1,56 @@
+$nm: main-footer;
+
+.#{$nm} {}
+
+.#{$nm} * {
+	outline: 1px dotted #458b00;
+	outline-offset: -1px;
+}
+
+
+.#{$nm}__wrapper {
+	display: flex;
+}
+
+.#{$nm}__site-nav {
+	margin: 23px 0px 0px -2px;
+	padding: 0;
+	// list-style: none;
+}
+
+.#{$nm}__site-nav .site-nav__link {
+	color: inherit;
+}
+
+.#{$nm}__socials {
+
+}
+
+.#{$nm}__ {
+
+}
+
+.#{$nm}__ {
+
+}
+
+.#{$nm}__ {
+
+}
+
+.#{$nm}__ {
+
+}
+
+.#{$nm}__ {
+
+}
+
+.#{$nm}__ {
+
+}
+
+.#{$nm}__ {}
+.#{$nm}__ {}
+.#{$nm}__ {}
+.#{$nm}__ {}

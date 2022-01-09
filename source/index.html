@@ -254,8 +254,11 @@
 		</section>
 
 		<section class="reviews container">
-			<h2 class="section__title">Отзывы</h2>
-
+			<div class="reviews__wrapper">
+				<header class="section__header">
+				<h2 class="section__title">Отзывы</h2>
+			</header>
+			
 			<ul class="reviews__list">
 				<li class="reviews__item">
 					<img src="../img/rewiew-pic-1.jpg" width="360" height="160" alt="Отзыв Алексей Петров">
@@ -271,7 +274,7 @@
 					<blockquote>
 						<cite class="reviews__name">Михаил Кузнецов</cite>
 						<p class="reviews__cruise-name">Морская прогулка в Абрау-Дюрсо</p>
-						<p class="reviews__text">И прогулка интересная, и шампанское вкусное!</p>
+						<p class="reviews__text">И прогулка интересная,<br> и шампанское вкусное!</p>
 					</blockquote>
 				</li>
 
@@ -284,50 +287,57 @@
 					</blockquote>
 				</li>
 			</ul>
+
+			<a class="rewiews__button button">Выбрать круизов</a>
+		</div>
+			
 		</section>
 	</main>
 
 	<footer class="main-footer">
 		<div class="container">
-			<ul class="main-footer__site-nav site-nav">
-				<li class="site-nav__item">
-					<a href="#" class="site-nav__link">Расписание рейсов</a>
-				</li>
-				<li class="site-nav__item">
-					<a href="#" class="site-nav__link">Вход для партнёров</a>
-				</li>
-				<li class="site-nav__item">
-					<a href="#" class="site-nav__link">О компании</a>
-				</li>
-			</ul>
-
-			<div class="main-footer__socials socials">
-				<p class="socials__text">Будь на связи</p>
-				<ul class="socials__list">
-					<li class="socials__item">
-						<a href="https://www.vk.com vk" class="socials__link">В Контакте</a>
+			<div class="main-footer__wrapper">
+				<ul class="main-footer__site-nav site-nav">
+					<li class="site-nav__item">
+						<a href="#" class="site-nav__link">Расписание рейсов</a>
 					</li>
-
-					<li class="socials__item">
-						<a href="https://www.ok.ru ok" class="socials__link">Одноклассники</a>
+					<li class="site-nav__item">
+						<a href="#" class="site-nav__link">Вход для партнёров</a>
 					</li>
-
-					<li class="socials__item">
-						<a href="https://www.youtube.com youtube" class="socials__link">Youtube</a>
-					</li>
-
-					<li class="socials__item">
-						<a href="https://www.instagram.com instagram" class="socials__link">Instagramm</a>
+					<li class="site-nav__item">
+						<a href="#" class="site-nav__link">О компании</a>
 					</li>
 				</ul>
 
-			</div>
+				<div class="main-footer__socials socials">
+					<p class="socials__text">Будь на связи</p>
+					<ul class="socials__list">
+						<li class="socials__item">
+							<a href="https://www.vk.com vk" class="socials__link vk">В Контакте</a>
+						</li>
 
-			<div class="main-footer__more-info more-info">
-				<a href="tel:8 800 500-61-05 " class="more-info__phone">8 800 500-61-05 </a>
-				<small class="more-info__text">Круглосуточная поддержка</small>
-				<p class="more-info__copyright">© 2016 OOO «Городские Круизы»</p>
+						<li class="socials__item">
+							<a href="https://www.ok.ru ok" class="socials__link ok">Одноклассники</a>
+						</li>
+
+						<li class="socials__item">
+							<a href="https://www.youtube.com youtube" class="socials__link yt">Youtube</a>
+						</li>
+
+						<li class="socials__item">
+							<a href="https://www.instagram.com instagram" class="socials__link insta">Instagramm</a>
+						</li>
+					</ul>
+
+				</div>
+
+				<div class="main-footer__more-info more-info">
+					<a href="tel:8 800 500-61-05 " class="more-info__phone">8 800 500-61-05 </a>
+					<small class="more-info__text">Круглосуточная поддержка</small>
+					<p class="more-info__copyright">© 2016 OOO «Городские Круизы»</p>
+				</div>
 			</div>
+			
 		</div>
 	</footer>
 </body>
