@@ -1,0 +1,17 @@
+$nm: site-nav;
+
+.#{$nm} {
+	letter-spacing: 0.0483em;;
+	list-style: none;
+	padding-top: 34px;
+	font-size: 0.875rem;
+}
+
+.#{$nm}__item {
+	margin-right: 35px;
+}
+
+.#{$nm}__link {
+
+}
+

@@ -1,1 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Туристическое агенство «Городские круизы»</title>
+</head>
+<body>
+	<header class="main-header">
+		<nav class="main-header__nav container">
+			
+			<ul class="main-header__site-nav site-nav">
+				<li class="site-nav__item">
+					<a href="#" class="site-nav__link">Расписание рейсов</a>
+				</li>
 
+				<li class="site-nav__item">
+					<a href="#" class="site-nav__link">Вход для партнёров</a>
+				</li>
+
+				<li class="site-nav__item">
+					<a href="#" class="site-nav__link">О компании</a>
+				</li>
+			</ul>
+
+			<div class="main-header__user-nav">
+				<form action="#" method="GET">
+
+					<ul class="main-header__fieldset-list">
+						
+						<li class="main-header__fieldset-item">
+							<legend class="visually-hidden">Личный кабинет</legend>
+							<select name="account" id="account">
+								<option selected value="account">Личный кабинет</option>
+								<option value="logout">Выйти</option>
+								<option value="login">Войти</option>
+							</select>
+						</li>
+
+						<li class="main-header__fieldset-item">
+							<legend class="visually-hidden">Валюта</legend>
+							<select name="currency" id="currency">
+								<option selected value="rubl">Рубль</option>
+								<option value="dollar">Доллар</option>
+								<option value="euro">Евро</option>
+							</select>
+						</li>
+
+						<li class="main-header__fieldset-item">
+							<legend class="visually-hidden">Язык</legend>
+							<select name="page-language" id="page-language">
+								<option selected value="rus">Ru</option>
+								<option value="en">En</option>
+							</select>
+						</li>
+					</ul>
+				</form>
+			</div>
+
+			<div class="main-header__contacts more-info">
+				<a href="tel:88005006105" class="more-info__phone">8 800 500-61-05</a>
+				<small class="more-info__text">Круглосуточная поддержка</small>
+			</div>
+		</nav>
+
+		<div class="main-header__logo-container container">
+			<a href="#" class="logo">
+				<img src="../img/logo.png" width="88" height="88" alt="Логотип">
+			</a>
+		</div>
+	</header>
+
+	<main>
+		<h1 class="visually-hidden">Туристическое агенство «Городские круизы»</h1>
+		<section class="promo">
+			<div class="container">
+				<div class="promo__wrapper">
+					<h2 class="promo__title">Морские прогулки<br><span class="promo__title_big">По чёрному морю</span></h2>
+					<a href="#" class="promo__button button">Выбрать круиз</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="catalog container">
+			<header class="section__header">
+				<h2 class="section__title">Каталог круизов</h2>
+				
+				<form action="#" method="GET">
+					<div class="catalog__form-sort-wrapper">
+					<label for="sort-by">Сортировать круизы по </label>
+						<select name="sort-by" id="sort-by">
+							<option value="price">цене</option>
+							<option value="popular">популярности</option>
+							<option value="rating">рейтингу</option>
+						</select>
+					</div>
+				</form>
+			</header>
+			
+			<ul class="catalog__list">
+				
+				<li class="catalog__item card card__hit">
+					<a href="#">
+						<h3 class="card__title">Морской круиз в Анапу</h3>
+					</a>
+					<img src="../img/catalog-pic-1.jpg" width="555" height="437" alt="Круиз в Анапу">
+
+					<div class="card__description-wrapper">
+						<dl class="card__description">
+							<div class="card__description-item">
+								<tt>Маршрут:</tt>
+								<dd>Сочи-Лазаревское-Геленджик-Анапа</dd>
+							</div>
+
+							<div class="card__description-item">
+								<tt>Продолжительлность:</tt>
+								<dd>10 ч 0 мин</dd>
+							</div>
+						</dl>
+
+						<p class="card__price">49 000 руб.<span class="visually-hidden card__discount-text"></span>
+						</p>
+					</div>
+				</li>
+
+				<li class="catalog__item card">
+					<a href="#">
+						<h3 class="card__title">Морской круиз в Новороссийск</h3>
+					</a>
+					<img src="../img/catalog-pic-2.jpg" width="555" height="113" alt="Круиз в Новороссийск">
+
+					<div class="card__description-wrapper">
+						<dl class="card__description">
+							<div class="card__description-item">
+								<tt>Маршрут:</tt>
+								<dd>Сочи-Геленджик-Новороссийск-Геленджик-Сочи</dd>
+							</div>
+
+							<div class="card__description-item">
+								<tt>Продолжительлность:</tt>
+								<dd>13 ч 0 мин</dd>
+							</div>
+						</dl>
+
+						<p class="card__price">14 800 руб.<span class="visually-hidden card__discount-text"></span></p>
+					</div>
+				</li>
+
+				<li class="catalog__item card card__discount">
+					<a href="#">
+						<h3 class="card__title">Обзорная морская прогулка с экскурсией</h3>
+					</a>
+					<img src="../img/catalog-pic-3.jpg" width="555" height="113" alt="Прогулка с экскурсией Сочи-Адлер">
+
+					<div class="card__description-wrapper">
+						<dl class="card__description">
+							<div class="card__description-item">
+								<tt>Маршрут:</tt>
+								<dd>Сочи-Адлер-Сочи (без высадки)</dd>
+							</div>
+
+							<div class="card__description-item">
+								<tt>Продолжительлность:</tt>
+								<dd>1 ч 0 мин</dd>
+							</div>
+						</dl>
+
+						<p class="card__price">5 000 руб. <span class="card__discount-text">15000 руб.</span></p>
+					</div>
+				</li>
+
+				<li class="catalog__item card">
+					<a href="#">
+						<h3 class="card__title">Морская прогулка в Геленджик</h3>
+					</a>
+					<img src="../img/catalog-pic-4.jpg" width="555" height="113" alt="Прогулка в Геленджик">
+
+					<div class="card__description-wrapper">
+						<dl class="card__description">
+							<div class="card__description-item">
+								<tt>Маршрут:</tt>
+								<dd>Сочи-Туапсе-Геленджик</dd>
+							</div>
+	
+							<div class="card__description-item">
+								<tt>Продолжительлность:</tt>
+								<dd>12 ч 30 мин</dd>
+							</div>
+						</dl>
+	
+						<p class="card__price">7 000 руб. <span class="visually-hidden card__discount-text"></span></p>
+					</div>
+				</li>
+
+				<li class="catalog__item card">
+					<a href="#">
+						<h3 class="card__title">Морская прогулка в Абрау-Дюрсо</h3>
+					</a>
+					<img src="../img/catalog-pic-4.jpg" width="555" height="113" alt="Прогулка в Абрау-Дюрсо">
+
+					<div class="card__description-wrapper">
+						<dl class="card__description">
+							<div class="card__description-item">
+								<tt>Маршрут:</tt>
+								<dd>Сочи-Абрау-Дюрсо</dd>
+							</div>
+	
+							<div class="card__description-item">
+								<tt>Продолжительлность:</tt>
+								<dd>11 ч 00 мин</dd>
+							</div>
+						</dl>
+	
+						<p class="card__price">14 800 руб. <span class="visually-hidden card__discount-text"></span></p>
+					</div>
+				</li>
+			</ul>
+
+			<button type="button" class="catalog__button button">Больше круизов</button>
+		</section>
+
+		<section class="gallery container">
+			<header class="section__header">
+				<h2 class="section__title">Фотографии с круизов</h2>
+			</header>
+
+			<ul class="gallery__list">
+				<li class="gallery__item gallery__item_big">
+					<img src="../img/gallery-pic-1.jpg" width="570" height="320" alt="Фото галереи 1">
+				</li>
+
+				<li class="gallery__item">
+					<img src="../img/gallery-pic-2.jpg" width="285" height="320" alt="Фото галереи 2">
+				</li>
+
+				<li class="gallery__item">
+					<img src="../img/gallery-pic-3.jpg" width="285" height="320" alt="Фото галереи 3">
+				</li>
+
+				<li class="gallery__item">
+					<img src="../img/gallery-pic-4.jpg" width="285" height="320" alt="Фото галереи 4">
+				</li>
+
+				<li class="gallery__item">
+					<img src="../img/gallery-pic-5.jpg" width="285" height="320" alt="Фото галереи 5">
+				</li>		
+
+				<li class="gallery__item gallery__item_big">
+					<img src="../img/gallery-pic-6.jpg" width="570" height="320" alt="Фото галереи 6">
+				</li>
+			</ul>
+		</section>
+
+		<section class="reviews container">
+			<div class="reviews__wrapper">
+				<header class="section__header">
+				<h2 class="section__title">Отзывы</h2>
+			</header>
+			
+			<ul class="reviews__list">
+				<li class="reviews__item">
+					<img src="../img/rewiew-pic-1.jpg" width="360" height="160" alt="Отзыв Алексей Петров">
+					<blockquote>
+						<cite class="reviews__name">Алексей Петров</cite>
+						<p class="reviews__cruise-name">Морской круиз в Новороссийск</p>
+						<p class="reviews__text">Давно мечтал посетить прекрасный город Новороссийск, и вот моя мечта сбылась. Путешествие очень понравилось, тем более, что море было спокойное, и качки вообще не ощущалось. Рекомендую!</p>
+					</blockquote>
+				</li>
+
+				<li class="reviews__item">
+					<img src="../img/rewiew-pic-2.jpg" width="360" height="160" alt="Отзыв Михаил Кузнецов">
+					<blockquote>
+						<cite class="reviews__name">Михаил Кузнецов</cite>
+						<p class="reviews__cruise-name">Морская прогулка в Абрау-Дюрсо</p>
+						<p class="reviews__text">И прогулка интересная,<br> и шампанское вкусное!</p>
+					</blockquote>
+				</li>
+
+				<li class="reviews__item">
+					<img src="../img/rewiew-pic-3.jpg" width="360" height="160" alt="Отзыв Елена Фёдорова">
+					<blockquote>
+						<cite class="reviews__name">Елена Фёдорова</cite>
+						<p class="reviews__cruise-name">Морской круиз в Анапу</p>
+						<p class="reviews__text">Отлично отдохнули, получили массу впечатлений. Понравилась забота команды об отдыхающих. Любые просьбы, в рамках возможного, можно решить. Конечно видно, что судно видало не только Чёрное море и ходит давно. Но команда лайнера делает все возможное, чтобы это вас не беспокоило. Клининг в каютах убирался сам, без напоминаний и это радует. Аниматоры старались и не давали скучать никому.</p>
+					</blockquote>
+				</li>
+			</ul>
+
+			<a class="rewiews__button button">Выбрать круизов</a>
+		</div>
+			
+		</section>
+	</main>
+
+	<footer class="main-footer">
+		<div class="container">
+			<div class="main-footer__wrapper">
+				<ul class="main-footer__site-nav site-nav">
+					<li class="site-nav__item">
+						<a href="#" class="site-nav__link">Расписание рейсов</a>
+					</li>
+					<li class="site-nav__item">
+						<a href="#" class="site-nav__link">Вход для партнёров</a>
+					</li>
+					<li class="site-nav__item">
+						<a href="#" class="site-nav__link">О компании</a>
+					</li>
+				</ul>
+
+				<div class="main-footer__socials socials">
+					<p class="socials__text">Будь на связи</p>
+					<ul class="socials__list">
+						<li class="socials__item">
+							<a href="https://www.vk.com vk" class="socials__link vk">В Контакте</a>
+						</li>
+
+						<li class="socials__item">
+							<a href="https://www.ok.ru ok" class="socials__link ok">Одноклассники</a>
+						</li>
+
+						<li class="socials__item">
+							<a href="https://www.youtube.com youtube" class="socials__link yt">Youtube</a>
+						</li>
+
+						<li class="socials__item">
+							<a href="https://www.instagram.com instagram" class="socials__link insta">Instagramm</a>
+						</li>
+					</ul>
+
+				</div>
+
+				<div class="main-footer__more-info more-info">
+					<a href="tel:8 800 500-61-05 " class="more-info__phone">8 800 500-61-05 </a>
+					<small class="more-info__text">Круглосуточная поддержка</small>
+					<p class="more-info__copyright">© 2016 OOO «Городские Круизы»</p>
+				</div>
+			</div>
+			
+		</div>
+	</footer>
+</body>
+</html>

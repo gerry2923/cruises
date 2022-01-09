@@ -1,0 +1,41 @@
+$nm: gallery;
+
+.#{$nm} *{
+	outline: 1px dotted #66cd00;
+	outline-offset: -1px;
+}
+
+.#{$nm} {
+	margin-bottom: 75px;
+}
+
+.#{$nm}__list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	height: 641px;
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	list-style: none;
+}
+
+.#{$nm}__item {
+	width: 285px;
+	height: 320px;
+}
+
+.#{$nm}__item img {
+	width: 100%;
+	height: 100%;
+}
+
+.#{$nm}__item_big {
+	width: 570px;
+} 
+
+#{$nm}__item {
+	
+}
+

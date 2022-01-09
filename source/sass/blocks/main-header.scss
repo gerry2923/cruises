@@ -1,0 +1,122 @@
+$nm: main-header;
+
+.#{$nm} {
+
+}
+
+.container {
+	width: 1170px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+
+	outline: 1px solid red;
+	outline-offset: -1px;
+}
+
+.#{$nm}__nav {
+	display: flex;
+	flex-direction: row;
+}
+
+.#{$nm}__site-nav {
+	display: flex;
+	max-width: 500px;
+	flex-wrap: wrap;
+	margin: 0 auto 0 0;
+	padding: 0;
+}
+
+.#{$nm}__user-nav {
+	margin: 0px 0 0 0;
+	padding: 29px 0 0 0;
+	list-style: none;
+}
+
+.#{$nm}__fieldset-list {
+	display: flex;
+	justify-content: flex-end;
+	max-width: 500px;
+	flex-wrap: wrap;
+	padding: 9px 38px 0px 0px;
+	margin: 0;
+	list-style: none;
+}
+
+.#{$nm}__fieldset-item {
+	margin-left: 27px;
+	font-size: 0.875rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.#{$nm}__fieldset-item legend {
+	line-height: 1em;
+}
+
+.#{$nm}__fieldset-item select {
+	appearance: none;
+	border: none;
+	background-color: transparent;
+	margin-right: 7px;
+	margin-left: 7px;
+}
+
+.#{$nm}__fieldset-item:last-child select{
+	margin-left: 0px;
+}
+
+.#{$nm}__fieldset-item::after {
+	content: "";
+	display: block;
+
+	width: 12px;
+	height: 12px;
+
+	padding: 0px 0px 0px 0px;
+	margin: 5px 0px 0px 0px;
+
+	border-top: 6px solid $font-color-basic;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-bottom: 6px solid transparent;
+}
+
+.#{$nm}__fieldset-item:nth-child(1)::before,
+.#{$nm}__fieldset-item:nth-child(2)::before {
+	content: "";
+	display: block;
+
+	padding: 0px 0px 0px 0px;
+	margin: 1px 0px 0px 0px;
+}
+
+.#{$nm}__fieldset-item:nth-child(1)::before {
+	width: 11px;
+	height: 13px;
+	background-image: url('../img/user.svg');
+	background-size: 10px 12px;
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+.#{$nm}__fieldset-item:nth-child(2)::before {
+	width: 11px;
+	height: 13px;
+	background-image: url('../img/rubl.svg');
+	background-size: 10px 12px;
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+.#{$nm}__contacts {
+
+}
+
+.#{$nm}__logo-container {
+	padding-top: 22px;
+	padding-left: 7px;;
+	text-align: center;
+}

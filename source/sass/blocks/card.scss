@@ -1,0 +1,172 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	width: 555px;
+	margin-right: 29px;
+	margin-bottom: 20px;
+	padding-bottom: 30px;
+}
+
+.card img {
+	order: -1;
+}
+
+.card__title {
+	font-family: "Roboto Slab", "Times New Roman", Times, serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.125rem;
+	line-height: 2.66em;
+	letter-spacing: 0.05em;
+	color: $button-bgd;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	margin: 13px 0px 0px 38px ;
+	padding: 0px 0px;
+}
+
+.card__title::after {
+	content: "";
+	display: block;
+	margin-top: 2px;
+	margin-left: 15px;
+	width: 8px;
+	height: 8px;
+	border-left: 4px solid $button-bgd;
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+	border-right: 4px solid transparent;
+
+}
+
+.card__description {
+	margin: 0px 0px 3px;
+	padding-left: 36px;
+	line-height: 1.5em;
+}
+
+.card__description-item {
+	display: flex;
+}
+
+.card__description-wrapper {
+	padding-top: 0px;
+	padding-bottom: 0px;;
+}
+
+.card__description tt {
+	font-family: "Raleway", "Arial", sans-serif;
+	font-size: 0.875rem;
+	line-height: 1.71em;
+	letter-spacing: 0.05em;
+	font-weight: bold;
+	margin-right: 10px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.card__description dd {
+	font-family: "Raleway", "Arial", sans-serif;
+	margin-left: 0px;
+	font-size:  0.875rem;
+	line-height: 1.71em;
+	letter-spacing: 0.05em;
+}
+
+.card__price {
+	font-family: "Roboto Slab", "Times New Roman", Times, serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.875rem;
+	line-height: 1.6em;
+	letter-spacing: 0.05em;
+
+	margin: 0px 0px 0px 0px;
+	padding-left: 38px;
+}
+
+.card__hit {
+	position: relative;
+}
+
+.card__hit::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: -7px;
+	right: 47px;
+	width: 89px;
+	height: 101px;
+
+	border-top: 82px solid $button-bgd;
+	border-left: 44px solid $button-bgd;
+	border-right: 44px solid $button-bgd;
+	border-bottom: 19px solid transparent;
+}
+
+.card__hit::after {
+	content: "Хит продаж";
+	display: block;
+	position: absolute;
+	top: 20px;
+	right: 47px;
+	width: 89px;
+	height: 101px;
+
+	font-family: "Raleway", "Arial", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 1.29em;
+	font-size: 0.875rem;
+	color: $font-clr-light;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.card__discount {
+	position: relative;
+}
+
+.card__discount::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: -7px;
+	right: 46px;
+	width: 89px;
+	height: 101px;
+
+	border-top: 82px solid $discount-flag;
+	border-left: 44px solid $discount-flag;
+	border-right: 44px solid $discount-flag;
+	border-bottom: 19px solid transparent;
+}
+
+.card__discount::after {
+	content: "акция";
+	display: block;
+	position: absolute;
+	top: 29px;
+	right: 45px;
+	width: 89px;
+	height: 101px;
+
+	font-family: "Raleway", "Arial", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 1.29em;
+	font-size: 0.875rem;
+	color: $font-clr-light;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.card__discount-text {
+	font-size: 1.125rem;
+	line-height: 2.67em;
+	color: $strikethough-text;
+	text-decoration: line-through;
+}
+
