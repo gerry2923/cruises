@@ -25,3 +25,13 @@ $nm: more-info;
 	letter-spacing: 0.05em;
 }
 
+.#{$nm}__copyright {
+	font-family: "Raleway", "Arial", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.875rem;
+	line-height: 1.71em;
+	letter-spacing: 0.044em;
+	margin-top: 8px;
+}
+
