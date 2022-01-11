@@ -11,9 +11,10 @@ $nm: socials;
 	line-height: 1.71em;
 	font-size: 0.875rem;
 	margin-top: 10px;
-	margin-bottom: 10px;
-	padding-left: 10px;
+	margin-bottom: 4px;
+	padding-left: 0px;
 	padding-right: 10px;
+	letter-spacing: 0.036em;
 }
 
 .socials__list {
@@ -26,7 +27,9 @@ $nm: socials;
 
 .#{$nm}__item {
 	position: relative;
-
+	width: 30px;
+	height: 30px;;
+	margin-right: 10px;
 }
 
 .#{$nm}__link {
@@ -52,13 +55,30 @@ $nm: socials;
 
 }
 
+.vk::before {
+	background-image: url("../img/vk.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 18px 11px;
+}
 
-.vk {}
-.ok {}
-.yt {}
-.insta {}
+.ok::before {
+	background-image: url("../img/ok.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 10px 16px;
+}
 
+.yt::before {
+	background-image: url("../img/yt.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 14px 18px;
+}
 
-
-
-.#{$nm}__ {}
+.insta::before {
+	background-image: url("../img/insta.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 14px 14px;
+}

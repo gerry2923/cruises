@@ -1,10 +1,5 @@
 $nm: gallery;
 
-.#{$nm} *{
-	outline: 1px dotted #66cd00;
-	outline-offset: -1px;
-}
-
 .#{$nm} {
 	margin-bottom: 75px;
 }
@@ -35,7 +30,27 @@ $nm: gallery;
 	width: 570px;
 } 
 
-#{$nm}__item {
-	
+.#{$nm}__item:nth-child(2) {
+	order: 2;
+}
+
+.#{$nm}__item:nth-child(3) {
+	order: 3;
+}
+
+.#{$nm}__item:nth-child(4) {
+	order: 0;
+}
+
+.#{$nm}__item:nth-child(5) {
+	order: 1;
+}
+
+.#{$nm}__item:nth-child(1) {
+	order: -1;
+}
+
+.#{$nm}__item:nth-child(6) {
+	order: 4;
 }
 

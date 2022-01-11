@@ -2,12 +2,6 @@ $nm: main-footer;
 
 .#{$nm} {}
 
-.#{$nm} * {
-	outline: 1px dotted #458b00;
-	outline-offset: -1px;
-}
-
-
 .#{$nm}__wrapper {
 	display: flex;
 }
@@ -15,7 +9,6 @@ $nm: main-footer;
 .#{$nm}__site-nav {
 	margin: 23px 0px 0px -2px;
 	padding: 0;
-	// list-style: none;
 }
 
 .#{$nm}__site-nav .site-nav__link {
@@ -23,34 +16,11 @@ $nm: main-footer;
 }
 
 .#{$nm}__socials {
-
+	margin-left: 112px;
+	padding-top: 14px;
 }
 
-.#{$nm}__ {
-
+.#{$nm}__more-info {
+	margin-left: auto;
+	width: 243px;
 }
-
-.#{$nm}__ {
-
-}
-
-.#{$nm}__ {
-
-}
-
-.#{$nm}__ {
-
-}
-
-.#{$nm}__ {
-
-}
-
-.#{$nm}__ {
-
-}
-
-.#{$nm}__ {}
-.#{$nm}__ {}
-.#{$nm}__ {}
-.#{$nm}__ {}
